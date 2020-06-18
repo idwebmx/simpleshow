@@ -1,0 +1,423 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.bg-container {
+    background-image: url(../css-work/images/hanger_background.svg);
+    background-repeat: no-repeat;
+    bottom: 0;
+    left: 0;
+    height: 680px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1200px;
+    .img-bg {
+        position: absolute;
+    }
+}
+
+.c-instruction-box {
+    background-image: url(../css-work/images/instruction_box.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 110px;
+    position: absolute;
+    right: 90px;
+    top: 50px;
+    width: 510px;
+    z-index: 99;
+    .cib-text {
+        font-family: Permanent Marker;
+        font-size: 12px;
+        position: absolute;
+        right: 25px;
+        top: 30px;
+        width: 77%; 
+    }
+}
+
+.container-1 {
+    float: left;
+    height: 100%;
+    position: relative;
+    width: 360px;  
+}
+.container-2 {
+    float: left;
+    height: 100%;
+    position: relative;
+    width: 125px;
+    .mk-body {
+        height: 135px;
+        position: absolute;
+        top: 168px;
+        width: 100%;
+    }
+    .mk-torso {
+        background-image: url(../css-work/images/simplemech-torso.svg);
+        background-repeat: no-repeat;
+        height: 135px;
+        position: absolute;
+        top: 9px;
+        width: 100%;        
+    }
+    .mk-leg-1 {
+        background-repeat: no-repeat;
+        height: 200px;
+        left: -10px;
+        position: absolute;
+        top: 104px;
+        width: 50%;
+        img {
+            height: 200px;
+            left: 8px;
+            position: absolute;
+            top: -19px;
+            width: 50px;            
+        }
+    }
+    .mk-leg-2 {
+        background-repeat: no-repeat;
+        cursor: pointer;
+        height: 200px;
+        right: 0;
+        position: absolute;
+        top: 104px;
+        width: 50%;
+        img {
+            height: 200px;
+            left: 14px;
+            position: absolute;
+            top: -17px;
+            width: 47px;            
+        }
+    }  
+}
+
+.container-3 {
+    float: left;
+    height: 100%;
+    position: relative;
+    width: 225px;
+    .leg-1 {
+        background-repeat: no-repeat;
+        background-position: right;
+        cursor: move;
+        height: 200px;
+        position: absolute;
+        right: 0;
+        top: 264px;
+        width: 30%;
+        img {
+            height: 200px;
+            position: absolute;
+        }
+    }
+}
+
+.container-4 {
+    float: left;
+    height: 100%;
+    position: relative;
+    width: 77px;
+    .leg-2 {
+        background-repeat: no-repeat;
+        background-position: right;
+        cursor: move;
+        height: 200px;
+        position: absolute;
+        right: 0;
+        top: 264px;
+        width: 77%;
+        img {
+            height: 200px;
+            position: absolute;
+        }
+    }
+}
+
+.container-5 {
+    float: left;
+    height: 100%;
+    position: relative;
+    width: 130px;
+    .c-5-chest {
+        height: 200px;
+        position: relative;
+        padding-top: 100px;
+        width: 100%;
+        .img-chest {
+            cursor: move;
+            height: 200px;
+            position: absolute;
+            padding-top: 110px;
+            width: 100%;
+            img {
+                height: 100px;
+                position: absolute;
+                right: -19px;
+            }
+        }
+    }
+    .c-5-head {
+        height: 200px;
+        position: relative;
+        width: 100%;
+        .img-head {
+            cursor: move;
+            height: 200px;
+            position: absolute;
+            width: 100%;
+            img {
+                height: 100px;
+                position: absolute;
+                right: 40px;
+                top: 62px;
+            }
+        }
+    }
+}
+
+.mk-head {
+    height: 77px;
+    position: absolute;
+    top: -50px;
+    width: 100%;
+    .img-head {
+        img {
+            height: 77px;
+            position: absolute;
+            right: 37px;
+            top: -16px;
+        }
+    }
+}
+
+.mk-chest {
+    height: 100px;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    z-index: 9999;
+    .img-chest {        
+        img {
+            height: 77px;
+            position: absolute;
+            right: 1px;
+            top: -24px;
+        }
+    }
+}
+
+.both-arms {
+    left: 25px;
+    position: relative;
+    top: 178px;
+    width: 77%;
+    .img-arm  {
+        cursor: move;
+        height: 90px;
+        position: absolute;
+        width: 100%;
+    }
+}
+
+.container-6 {
+    float: left;
+    height: 100%;
+    position: relative;
+    width: 90px;
+}
+
+.container-7 {
+    float: left;
+    height: 100%;
+    position: relative;
+    width: 90px;
+}
+
+.mk-arm-1 {
+    height: 200px;
+    left: -50px;
+    position: absolute;
+    width: 50px;
+    img {
+        left: 12px;
+        position: relative;
+        top: -18px;
+    }
+}
+
+.mk-arm-2 {
+    height: 200px;
+    right: -50px;
+    position: absolute;
+    width: 50px;
+    img {
+        right: 12px;
+        position: relative;
+        top: -18px;
+    }
+}
+
+/* start modal overlay */
+
+.container-modal {   
+    .modal-start {
+        background-image: url(../css-work/images/start_overlay-box-large.svg);
+        background-repeat: no-repeat;
+        bottom: 0;
+        left: 0;
+        height: 600px;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 768px;
+        z-index: 9999;
+        .ms-info {
+            bottom: 100px;
+            font-family: 'Permanent Marker';
+            font-size: 25px;
+            left: 0;
+            margin: auto;
+            position: absolute;
+            right: 0;
+            text-align: center;
+            width: 77%;
+            p {
+                padding: 0;
+                margin: 20px 0;
+            }
+            
+        }
+        .ms-btn {
+            background-color: transparent;
+            background-image: url(../css-work/images/start_button.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            border: none;
+            bottom: 40px;
+            height: 60px;
+            left: 0;
+            margin: auto;
+            position: absolute;
+            right: 0;
+            transition: all .3s;
+            width: 200px;
+            &:hover {
+                cursor: pointer;
+                height: 64px;
+            }
+            &:focus {
+                outline: none;
+            }                
+        }
+        
+        .ms-medium-screen {
+            background-image: url(../css-work/images/feedback_overlay-box-medium.svg);
+            background-repeat: no-repeat;
+            bottom: 60px;
+            height: 150px;
+            position: absolute;
+            right: -160px;
+            width: 250px;
+        }
+        
+        .ms-small-screen {
+            background-image: url(../css-work/images/feedback_overlay-box-small.svg);
+            background-repeat: no-repeat;
+            bottom: -50px;
+            height: 150px;
+            position: absolute;
+            right: -40px;
+            width: 200px;
+        }    
+    }
+    &:before {
+        background-color: rgba(0,0,0,.5);
+        bottom: 0;
+        content: "";
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        z-index: 9999;
+    }
+    .modal-end {
+        background-image: url(../css-work/images/feedback_overlay-box-large.svg);
+        background-repeat: no-repeat;
+        bottom: 0;
+        display: none;
+        left: 0;
+        height: 600px;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 768px;
+        z-index: 9999;
+        .c-close {
+            background-image: url(../css-work/images/close.svg);
+            background-repeat: no-repeat;
+            height: 30px;
+            position: absolute;
+            right: 50px;;
+            top: 40px;
+            width: 30px;
+            transition: all .3s;
+            &:hover {
+                cursor: pointer;
+                opacity: .77;
+            }
+        }
+        .ms-info {
+            font-family: 'Permanent Marker';
+            font-size: 25px;
+            left: 0;
+            margin: auto;
+            position: absolute;
+            right: 0;
+            text-align: center;
+            top: 20px;
+            width: 60%;
+            .title {
+                font-size: 30px;
+                margin: 30px 0 30px 0;
+                text-decoration: underline;
+            }
+            p {
+                padding: 0;
+                margin: 0;
+            }
+            
+        }
+        
+        .ms-medium-screen {
+            background-image: url(../css-work/images/feedback_overlay-box-medium.svg);
+            background-repeat: no-repeat;
+            height: 150px;
+            position: absolute;
+            top: -60px;
+            left: -140px;
+            width: 250px;
+        }
+        
+        .ms-small-screen {
+            background-image: url(../css-work/images/feedback_overlay-box-small.svg);
+            background-repeat: no-repeat;
+            height: 150px;
+            left: -200px;
+            position: absolute;
+            top: 50px;
+            width: 200px;
+        }    
+    }
+}
+/* end modal overlay */
+
+
