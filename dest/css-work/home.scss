@@ -1,6 +1,10 @@
-body {
+.body {
+    bottom: 0;
+    left: 0;
     margin: 0;
     padding: 0;
+    right: 0;
+    position: absolute;
 }
 
 .bg-container {
@@ -273,7 +277,7 @@ body {
         left: 0;
         height: 600px;
         margin: auto;
-        position: absolute;
+        position: fixed;
         right: 0;
         top: 0;
         width: 768px;
@@ -342,7 +346,7 @@ body {
         bottom: 0;
         content: "";
         left: 0;
-        position: absolute;
+        position: fixed;
         right: 0;
         top: 0;
         width: 100%;
