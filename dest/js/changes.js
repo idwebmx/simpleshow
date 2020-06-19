@@ -50,9 +50,90 @@ $('.dropme6').droppable( {
             if( $(this).hasClass(findClass) ){
                 setTimeout(function(){
                     $("#c-modal, #modal-end").show();
+                    // Wrap every letter in a span
+                    var textWrapper = document.querySelector('.ml5');
+                    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+                    anime.timeline({loop: false})
+                    .add({
+                        targets: '.ml5 .letter',
+                        scale: [4,1],
+                        opacity: [0,1],
+                        translateZ: 0,
+                        easing: "easeOutExpo",
+                        duration: 950,
+                        delay: (el, i) => 70*i
+                    }).add({
+                        targets: '.ml5',
+                        duration: 1000,
+                        easing: "easeOutExpo",
+                        delay: 1000
+                    });
+                    setTimeout(function(){
+                        // Wrap every letter in a span
+                        var textWrapper = document.querySelector('.ml6');
+                        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+                        $(".ml6").css("visibility", "initial");
+                        anime.timeline({loop: false})
+                        .add({
+                            targets: '.ml6 .letter',
+                            scale: [4,1],
+                            opacity: [0,1],
+                            translateZ: 0,
+                            easing: "easeOutExpo",
+                            duration: 950,
+                            delay: (el, i) => 70*i
+                        }).add({
+                            targets: '.ml6',
+                            duration: 1000,
+                            easing: "easeOutExpo",
+                            delay: 1000
+                        });
+                        setTimeout(function(){
+                            // Wrap every letter in a span
+                            var textWrapper = document.querySelector('.ml7');
+                            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+                            $(".ml7").css("visibility", "initial");
+                            anime.timeline({loop: false})
+                            .add({
+                                targets: '.ml7 .letter',
+                                scale: [4,1],
+                                opacity: [0,1],
+                                translateZ: 0,
+                                easing: "easeOutExpo",
+                                duration: 950,
+                                delay: (el, i) => 70*i
+                            }).add({
+                                targets: '.ml7',
+                                duration: 1000,
+                                easing: "easeOutExpo",
+                                delay: 1000
+                            });                        
+                        }, 1500);                        
+                    }, 1500);
                 }, 1000);
             }
             return false;
+        });
+        
+        // Wrap every letter in a span
+        var textWrapper = document.querySelector('.ml3');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({loop: false})
+        .add({
+            targets: '.ml3 .letter',
+            scale: [4,1],
+            opacity: [0,1],
+            translateZ: 0,
+            easing: "easeOutExpo",
+            duration: 950,
+            delay: (el, i) => 70*i
+        }).add({
+            targets: '.ml3',
+            duration: 1000,
+            easing: "easeOutExpo",
+            delay: 1000
         });
     }
 });
@@ -83,4 +164,50 @@ $(document).ready(function(){
         });
     });
 });
+
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.ml3');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: false})
+.add({
+    targets: '.ml3 .letter',
+    scale: [4,1],
+    opacity: [0,1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 950,
+    delay: (el, i) => 70*i
+}).add({
+    targets: '.ml3',
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+});
+
+
+setTimeout(function(){
+    $(".ml4").css("visibility", "initial");
+    // Wrap every letter in a span
+    var textWrapper = document.querySelector('.ml4');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({loop: false})
+    .add({
+        targets: '.ml4 .letter',
+        scale: [4,1],
+        opacity: [0,1],
+        translateZ: 0,
+        easing: "easeOutExpo",
+        duration: 950,
+        delay: (el, i) => 70*i
+    }).add({
+        targets: '.ml4',
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+    });
+}, 3500);
+
+
    
